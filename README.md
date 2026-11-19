@@ -15,4 +15,4 @@ frontend -> armazena todos os arquivos relacionados a interface.
 Uso de Vite como ferramenta de desenvolvimento frontend que facilita a criação e a excução de projetos com bibliotecas e frameworks como o React
 
 
-
+http do projeto: http://localhost:5173/
