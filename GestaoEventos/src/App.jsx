@@ -11,8 +11,16 @@ function App() {
 
   return (
     <>
-    <CadastrarEvento />
-    <GerirEventos />
+    <div className="container-principal">
+      {/* Caixa da Esquerda */}
+      <div className="coluna-esquerda">
+        <CadastrarEvento />
+      </div>
+      {/* Caixa da Direita */}
+      <div className="coluna-direita">
+        <GerirEventos />
+      </div>
+    </div>
     </>
   )
 }
