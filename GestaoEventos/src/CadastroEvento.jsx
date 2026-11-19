@@ -1,4 +1,4 @@
-export function GerenciarEventos(){
+export function CadastrarEvento(){
     return(
 <>
     <div id="cabecalhoGerirEvento">
@@ -25,23 +25,25 @@ export function GerenciarEventos(){
         <input type="time"/>
         <br/>
         <label>Quantidade de convidados</label>
-        <input type="number" placeholder="10"/>
+        <input type="number" placeholder="10" min={5} max={200}/>
         <br/>
         <label> Tipo de evento</label>
         <br/>
-        <label><input type="radio" name="tipoFesta" value="Aniversario" />Festa de aniversário</label>
+        <select name="tipoEvento">
+                    <option value="">Selecione uma opção</option>
+                    <option value="Casamento">Casamento</option>
+                    <option value="Aniversario">Festa de Aniversário</option>
+                    <option value="Formatura">Formatura</option>
+                    <option value="Corporativo">Corporativo</option>
+                    <option value="ChaBebe">Chá de bebê/Chá revelação</option>
+                    <option value="Confraternizacao">Confraternização</option>
+                    <option value="Palestra">Workshop/Palestra</option>
+                </select>
         <br/>
-        <label><input type="radio" name="tipoFesta" value="Formatura" />Formatura</label>
+        <label>Deseja buffet?</label>
         <br/>
-        <label><input type="radio" name="tipoFesta" value="Casamento" />Casamento</label>
-        <br/>
-        <label><input type="radio" name="tipoFesta" value="Corporativo" />Corporativo</label>
-        <br/>
-        <label><input type="radio" name="tipoFesta" value="ChaBebe" />Chá de bebê/Chá revelação</label>
-        <br/>
-        <label><input type="radio" name="tipoFesta" value="Confraternizacao" />Confraternização</label>
-        <br/>
-        <label><input type="radio" name="tipoFesta" value="Palestra" />Workshop/Palestra</label>
+        <label><input type="radio" name="buffet" value="Sim" />Sim</label>
+        <label><input type="radio" name="buffet" value="Nao" />Não</label>
         <br/>
         <label>Valor estimado</label>
         <input type="text" placeholder="R$ 200,00"/>

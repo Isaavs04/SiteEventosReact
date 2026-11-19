@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { CadastrarEvento } from './CadastroEvento';
+import { GerirEventos } from './GerenciamentoEventos';
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -9,7 +11,8 @@ function App() {
 
   return (
     <>
-    <div></div>
+    <CadastrarEvento />
+    <GerirEventos />
     </>
   )
 }
