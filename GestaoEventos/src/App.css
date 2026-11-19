@@ -1,3 +1,7 @@
+body{
+    background-color: aliceblue;
+}
+
 .container-principal {
   display: grid;
   grid-template-columns: 1fr 2fr; 
@@ -13,4 +17,57 @@
 #formEvento {
   gap: 10px;
   align-items: center;
+}
+#cabecalhoGerirEvento{
+    background-color: #3322cc;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+#Cadastro{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px #3322cc solid;
+
+}
+#formEvento{
+    color: #3322cc;
+    background-color: white;
+    padding: 30px;
+}
+h2{
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+}
+input{
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #3322cc 2px solid;
+    border-radius: 5px;
+}
+button{
+    color: white;
+    background-color: #3322cc;
+    padding: 20px;
+    border: #3322cc 1px solid;
+    border-radius: 10px;
+}
+button:hover{
+    color: #3322cc;
+    background-color: white;
+}
+.inputPersonalizado{
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #3322cc 2px solid;
+    border-radius: 5px;
+    width: 400px;
+}
+hr{
+    color: #3322cc;
 }

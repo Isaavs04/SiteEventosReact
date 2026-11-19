@@ -1,30 +1,39 @@
 export function CadastrarEvento(){
     return(
 <>
-    <div id="cabecalhoGerirEvento">
+<div id="Cadastro">
+<div id="cabecalhoGerirEvento">
         <h1>Cadastro de Eventos</h1>
     </div>
     <div id="formEvento">
         <h2>Informações do cliente</h2>
+        <hr></hr>
         <br/>
         <label>Nome do cliente</label>
-        <input type="text" placeholder="Maria da Silva"/>
+         <br/>
+        <input className="inputPersonalizado" type="text" placeholder="Maria da Silva"/>
         <br/>
         <label>Telefone para contato</label>
-        <input type="tel" placeholder="(00)00000-0000"/>
+         <br/>
+        <input className="inputPersonalizado" type="tel" placeholder="(00)00000-0000"/>
         <br/>
         <h2>Informações do evento</h2>
+        <hr></hr>
         <br/>
         <label>Endereço</label>
-        <input type="text" placeholder="R. Maria Cristina, 50 - Casqueiro, Cubatão"/>
+         <br/>
+        <input className="inputPersonalizado" type="text" placeholder="R. Maria Cristina, 50 - Casqueiro, Cubatão"/>
         <br/>
         <label>Data</label>
+         <br/>
         <input type="date"/>
         <br/>
         <label>Hora do evento</label>
+         <br/>
         <input type="time"/>
         <br/>
         <label>Quantidade de convidados</label>
+         <br/>
         <input type="number" placeholder="10" min={5} max={200}/>
         <br/>
         <label> Tipo de evento</label>
@@ -46,10 +55,13 @@ export function CadastrarEvento(){
         <label><input type="radio" name="buffet" value="Nao" />Não</label>
         <br/>
         <label>Valor estimado</label>
-        <input type="text" placeholder="R$ 200,00"/>
+         <br/>
+        <input className="inputPersonalizado" type="text" placeholder="R$ 200,00"/>
         <br/>
         <button type="submit">Cadastrar Evento</button>
-    </div>    
+    </div>
+</div>
+        
 </>
     )
 }
