@@ -2,9 +2,33 @@ body{
     background-color: aliceblue;
 }
 
+input[type="radio"] {
+  display: none; 
+}
+.radio-label {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #3322cc;
+  border-radius: 8px;
+  color: #3322cc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="radio"]:checked + .radio-label {
+  background-color: #3322cc;
+  color: white;
+}
+.grupo-radio {
+  display: flex;
+  gap: 15px; 
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 .container-principal {
-  display: grid;
-  grid-template-columns: 1fr 2fr; 
+ display: grid;
+  grid-template-columns: 1fr 3fr; 
   gap: 20px;
   padding: 20px;
 }
@@ -27,12 +51,20 @@ body{
 }
 #Cadastro{
     background-color: white;
+    border: 2px #3322cc solid;
     border-radius: 20px 20px 0px 0px;
-    border: 1px #3322cc solid;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 500px;
+    height: 100%;
+}
+#cdTitulo{
+    font-size: larger;
 }
 #formEvento{
     color: #3322cc;
     background-color: white;
+    border-radius: 0px 0px 20px 20px;
     padding: 30px;
 }
 h2{
@@ -51,9 +83,10 @@ input{
 .btnCadastro{
     color: white;
     background-color: #3322cc;
-    padding: 20px;
+    padding: 15px;
     border: #3322cc 1px solid;
     border-radius: 10px;
+     width: 150px;
 }
 .btnCadastro:hover{
     color: #3322cc;
@@ -88,12 +121,15 @@ hr{
     gap: 10px;
 }
 select{
+    background-color: #3322cc;
+    color: white;
     margin-top: 10px;
     height: 25px;
     margin-bottom: 15px;
     border: #2389ff 2px solid;
     border-radius: 5px;
-    width: 150px;
+    width: 165px;
+    height: 35px;
 }
 
  .labelCabecalho{
@@ -105,9 +141,10 @@ select{
     margin-left: 40px;
     background-color:#3322cc ;
     color: white;
-    padding: 20px;
+    padding: 15px;
     border: white 1px solid;
     border-radius: 10px;
+     width: 150px;
  }
  .btnBuscar:hover{
     background-color: white;
@@ -116,6 +153,9 @@ select{
  }
 
  .tituloGere{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     color: #3322cc;
     background-color: white;
     border: #3322cc 1px solid;
@@ -123,4 +163,69 @@ select{
     align-items: center;
     border-radius: 10px;
     text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 10px;
  }
+
+ /*Estilização do card*/
+ .card{
+    border: 1px solid #3322cc;
+    border-radius: 20px;
+    background-color: white;
+    color: #3322cc;
+    width: 340px;
+ }
+ .cardCabecalho{
+    background-color: #3322cc;
+    border-radius:  20px 20px 0px 0px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+ }
+
+ .btnFechar{
+    background-color: #3322cc;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 45px;
+    margin-left: 100px;
+    font-weight: bolder;
+ }
+ .btnFechar:hover{
+    background-color: white;
+    color: #3322cc;
+    border: #2389ff 1px solid;
+    border-radius: 5px;
+ }
+ .cardCorpo{
+    padding: 20px;
+ }
+ .btnEditar{
+    text-align: center;
+     color: white;
+    background-color: #3322cc;
+    padding: 15px;
+    border: #3322cc 1px solid;
+    border-radius: 10px;
+    width: 150px;
+}
+.btnEditar:hover{
+    color: #3322cc;
+    background-color: white;
+}
+#Colocarcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  height: 780px;
+  overflow-y: auto;
+  align-content: start;
+  background-color: white;
+  border: 2px solid #3322cc;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 0px;
+}

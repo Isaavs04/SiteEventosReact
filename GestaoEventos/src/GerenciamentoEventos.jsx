@@ -2,7 +2,7 @@ export function GerirEventos() {
     return (
         <>
             <div id="segundaColuna">
-                <h2 className="tituloGere">Gerenciar Eventos</h2>
+                <h1 className="tituloGere">Gerenciar Eventos</h1>
                 <div id="Cabecacalho">
                     <label className="labelCabecalho">Cliente</label>
                     <input className="inputPersonalizadoGerenciar" type="text" placeholder="Maria da Silva" />
