@@ -58,7 +58,7 @@ export function CadastrarEvento(){
          <br/>
         <input className="inputPersonalizado" type="text" placeholder="R$ 200,00"/>
         <br/>
-        <button type="submit">Cadastrar Evento</button>
+        <button className="btnCadastro" type="submit">Cadastrar Evento</button>
     </div>
 </div>
         

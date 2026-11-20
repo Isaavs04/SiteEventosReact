@@ -2,11 +2,11 @@ export function GerirEventos() {
     return (
         <>
             <div id="segundaColuna">
-                <h2>Gerenciar Eventos</h2>
-                <div id="Cabecaclho">
-                    <label>Cliente</label>
-                    <input type="text" placeholder="Maria da Silva" />
-                    <label>Tipo</label>
+                <h2 className="tituloGere">Gerenciar Eventos</h2>
+                <div id="Cabecacalho">
+                    <label className="labelCabecalho">Cliente</label>
+                    <input className="inputPersonalizadoGerenciar" type="text" placeholder="Maria da Silva" />
+                    <label className="labelCabecalho">Tipo</label>
                     <select name="tipoEvento">
                         <option value="">Selecione uma opção</option>
                         <option value="Casamento">Casamento</option>
@@ -17,19 +17,19 @@ export function GerirEventos() {
                         <option value="Confraternizacao">Confraternização</option>
                         <option value="Palestra">Workshop/Palestra</option>
                     </select>
-                    <label>Data</label>
+                    <label className="labelCabecalho">Data</label>
                     <input type="date" />
-                    <label>Hora</label>
+                    <label className="labelCabecalho">Hora</label>
                     <input type="time" />
-                    <button type="submit">Buscar</button>
-                    <label>Buffet</label>
+                    <label className="labelCabecalho">Buffet</label>
                     <select name="buffet">
                         <option value="">Selecione uma opção</option>
                         <option value="Sim">Sim</option>
                         <option value="Nao">Não</option>
                     </select>
-                    <label>Valor</label>
-                    <input type="text" placeholder="R$ 200,00"></input>
+                    <label className="labelCabecalho">Valor</label>
+                    <input className="inputPersonalizadoGerenciar" type="text" placeholder="R$ 200,00"></input>
+                    <button className="btnBuscar" type="submit">Buscar</button>
                 </div>
                 <div id="Colocarcards">
 
