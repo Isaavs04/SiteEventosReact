@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export function CadastrarEvento({ aoSalvar }) {
+export function CadastrarEvento({ aoSalvar, eventoEditando }) {
     const [cliente, setCliente] = useState('');
     const [telefone, setTelefone] = useState('');
     const [endereco, setEndereco] = useState('');
@@ -10,6 +10,21 @@ export function CadastrarEvento({ aoSalvar }) {
     const [tipo, setTipo] = useState('');
     const [buffet, setBuffet] = useState('');
     const [valor, setValor] = useState('');
+
+    useEffect(() => {
+        if (eventoEditando) {
+            setCliente(eventoEditando.cliente);
+            setTelefone(eventoEditando.telefone);
+            setEndereco(eventoEditando.endereco);
+            setData(eventoEditando.data);
+            setHora(eventoEditando.hora);
+            setQtdConvidados(eventoEditando.qtdConvidados);
+            setTipo(eventoEditando.tipo);
+            setBuffet(eventoEditando.buffet);
+            setValor(eventoEditando.valor);
+        }
+    }, [eventoEditando]);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const eventoObjeto = {

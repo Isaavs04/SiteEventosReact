@@ -1,6 +1,6 @@
 import { Card } from './CardEvento';
 
-export function GerirEventos({ listaEventos = [], aoDeletar }) {
+export function GerirEventos({ listaEventos = [], aoDeletar, aoEditar }) {
     return (
         <>
             <div id="segundaColuna">
@@ -39,7 +39,8 @@ export function GerirEventos({ listaEventos = [], aoDeletar }) {
                             <Card
                                 key={index}
                                 dadosEvento={evento}
-                                onDeletar={() => aoDeletar(index)} // Passamos a função engatilhada com o índice deste card
+                                onDeletar={() => aoDeletar(index)}
+                                onEditar={() => aoEditar(evento, index)} 
                             />
                         );
                     })}

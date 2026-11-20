@@ -1,4 +1,4 @@
-export function Card({ dadosEvento, onDeletar }) {
+export function Card({ dadosEvento, onDeletar, onEditar }) {
     return(
         <div className="card">
             <div className="cardCabecalho">
@@ -15,7 +15,7 @@ export function Card({ dadosEvento, onDeletar }) {
                 <p><strong>Buffet:</strong> {dadosEvento.buffet}</p>
                 <p><strong>Valor:</strong> {dadosEvento.valor}</p>
             </div>
-            <button className="btnEditar">Editar Evento</button>
+            <button className="btnEditar" onClick={onEditar}>Editar Evento</button>
         </div>
     );
 }
