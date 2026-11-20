@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: white;
 }
 
 input[type="radio"] {
@@ -175,6 +175,8 @@ select{
     background-color: white;
     color: #3322cc;
     width: 340px;
+    display: flex;
+    flex-direction: column;
  }
  .cardCabecalho{
     background-color: #3322cc;
@@ -202,15 +204,18 @@ select{
  }
  .cardCorpo{
     padding: 20px;
+    flex-grow: 1;
  }
  .btnEditar{
-    text-align: center;
-     color: white;
+    display: block;
+    margin: 0 auto 20px auto;
+    color: white;
     background-color: #3322cc;
     padding: 15px;
     border: #3322cc 1px solid;
     border-radius: 10px;
-    width: 150px;
+    width: 280px;
+    text-align: center;
 }
 .btnEditar:hover{
     color: #3322cc;
@@ -218,8 +223,9 @@ select{
 }
 #Colocarcards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(3, 340px);
+  justify-content: center; 
+  gap: 80px;
   padding: 20px;
   height: 780px;
   overflow-y: auto;

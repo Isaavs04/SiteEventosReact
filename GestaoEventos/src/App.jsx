@@ -1,29 +1,30 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { CadastrarEvento } from './CadastroEvento';
 import { GerirEventos } from './GerenciamentoEventos';
-import { Card } from './CardEvento';
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [eventos, setEventos] = useState([]);
+  const handleSalvarEvento = (novoEvento) => {
+    setEventos([...eventos, novoEvento]);
+  };
+  const handleDeletarEvento = (indexParaDeletar) => {
+    setEventos(eventos.filter((_, index) => index !== indexParaDeletar));
+  };
 
   return (
     <>
-    <div className="container-principal">
-      {/* Caixa da Esquerda */}
-      <div className="coluna-esquerda">
-        <CadastrarEvento />
+      <div className="container-principal">
+        <div className="coluna-esquerda">
+          <CadastrarEvento aoSalvar={handleSalvarEvento} />
+        </div>
+        <div className="coluna-direita">
+          <GerirEventos listaEventos={eventos} aoDeletar={handleDeletarEvento} />
+        </div>
       </div>
-      {/* Caixa da Direita */}
-      <div className="coluna-direita">
-        <GerirEventos />
-      </div>
-    </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

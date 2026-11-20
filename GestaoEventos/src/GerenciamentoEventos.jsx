@@ -1,4 +1,6 @@
-export function GerirEventos() {
+import { Card } from './CardEvento';
+
+export function GerirEventos({ listaEventos = [], aoDeletar }) {
     return (
         <>
             <div id="segundaColuna">
@@ -32,9 +34,16 @@ export function GerirEventos() {
                     <button className="btnBuscar" type="submit">Buscar</button>
                 </div>
                 <div id="Colocarcards">
-
+                    {listaEventos.map((evento, index) => {
+                        return (
+                            <Card
+                                key={index}
+                                dadosEvento={evento}
+                                onDeletar={() => aoDeletar(index)} // Passamos a função engatilhada com o índice deste card
+                            />
+                        );
+                    })}
                 </div>
-
             </div>
         </>
     )
