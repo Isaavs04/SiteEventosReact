@@ -15,4 +15,10 @@ frontend -> armazena todos os arquivos relacionados a interface.
 Uso de Vite como ferramenta de desenvolvimento frontend que facilita a criação e a excução de projetos com bibliotecas e frameworks como o React
 
 
-http do projeto: http://localhost:5173/
+Função de cada Pasta no Back-end
+
+controllers ->	Lógica do login.
+middleware -> Verificação do token.
+routes -> Definição das rotas da API.
+data -> Usuários pré-cadastrados.
+server.js -> Configuração e inicialização do servidor.

@@ -1,0 +1,12 @@
+
+# Dependências do Node.js
+node_modules/
+
+# Variáveis de ambiente
+.env
+
+# Arquivos gerados pelo Vite
+dist/
+
+# Logs
+*.log
