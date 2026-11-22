@@ -1,5 +1,5 @@
 import '../styles/Login.css';
-import img from '../assets/img-telaLogin.svg'
+import Carrossel from "../components/Carrossel/Carrossel";
 
 function Login() {
   return (
@@ -10,17 +10,16 @@ function Login() {
 
         <div className="form">
             
-          
           <form>
             <h1>Login</h1>
 
             <div className="campo">
-                <label htmlFor="txtEmail">Email*</label>
+                <label htmlFor="txtEmail">Email</label>
                 <input type="email" name="txtEmail" id="txtEmail" placeholder='Informe seu e-mail' required/>
             </div>
 
             <div className="campo">
-                <label htmlFor="txtSenha">Senha*</label>
+                <label htmlFor="txtSenha">Senha</label>
                 <input type="password" name="txtSenha" id="txtSenha" placeholder='Informe sua senha' required/>
             </div>
 
@@ -28,10 +27,9 @@ function Login() {
           </form>
         </div>
 
-        <div className="img">
-            <img src={img} alt="imagem"></img>
+        <div className="carrossel">
+           <Carrossel />
         </div>
-
       </div>
     </main>
   );
