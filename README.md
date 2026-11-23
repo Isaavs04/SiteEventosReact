@@ -214,3 +214,11 @@ Também é possível testar a API manualmente com Thunder Client ou Postman. Qua
 - O backend e o frontend devem permanecer em execução durante a utilização local do sistema.
 - O arquivo `.env` não deve ser enviado ao repositório.
 
+
+## Créditos
+- bsd
+- Magnific
+
+Site: [https://www.flaticon.com/br/](https://www.flaticon.com/br/)
+
+- Contèm mídia gerada por IA
