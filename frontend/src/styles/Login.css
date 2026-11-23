@@ -1,15 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+.pagina-login{
     font-family: 'Inter', sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     user-select: none;
 }
 
-body{
-    background-color: #C5CFE0;
+.pagina-login{
+    height: 96vh;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,10 +18,10 @@ body{
 
 .container{
     display: flex;
-    background-color: #ffff;
+    background-color: #d5d6da;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.144);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.137);
     width: 90vw; height: 90vh;
 }
 

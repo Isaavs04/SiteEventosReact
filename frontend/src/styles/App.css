@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=logout");
+
 body{
     background-color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 input[type="radio"] {
   display: none; 
 }
+
 .radio-label {
   display: inline-block;
   padding: 8px 16px;
@@ -19,6 +23,7 @@ input[type="radio"]:checked + .radio-label {
   background-color: #3322cc;
   color: white;
 }
+
 .grupo-radio {
   display: flex;
   gap: 15px; 
@@ -27,21 +32,26 @@ input[type="radio"]:checked + .radio-label {
 }
 
 .container-principal {
- display: grid;
-  grid-template-columns: 1fr 3fr; 
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(0, 3fr);
   gap: 20px;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 #Colocarcards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 20px;
 }
+
 #formEvento {
   gap: 10px;
   align-items: center;
 }
+
 #cabecalhoGerirEvento{
     background-color: #3322cc;
     color: white;
@@ -49,36 +59,41 @@ input[type="radio"]:checked + .radio-label {
     text-align: center;
     border-radius: 20px 20px 0px 0px;
 }
-#Cadastro{
-    background-color: white;
-    border: 2px #3322cc solid;
-    border-radius: 20px 20px 0px 0px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    width: 500px;
-    height: 100%;
+
+#Cadastro {
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+  height: auto;
+  box-sizing: border-box;
 }
+
 #cdTitulo{
     font-size: larger;
 }
-#formEvento{
+
+div#formEvento{
     color: #3322cc;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     padding: 30px;
+    border: #3322cc 2px solid;
 }
-h2{
+
+ h2{
     margin-bottom: 0px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: medium;
 }
-input{
+
+input[type="number"], input[type="date"], input[type="time"]{
     margin-top: 10px;
     height: 25px;
     margin-bottom: 15px;
     border: #3322cc 2px solid;
     border-radius: 5px;
+    cursor: pointer;
 }
 .btnCadastro{
     color: white;
@@ -106,12 +121,39 @@ input{
     margin-bottom: 15px;
     border: #2389ff 2px solid;
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 hr{
     color: #3322cc;
 }
+
+button, select{
+    cursor: pointer;
+}
+
+.area-logout{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+}
+
+#btnLogout{
+    display: inline;
+    font-size: larger;
+    background-color: #3322cc;
+    color: white;
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+ }
+
+ #btnLogout:hover{
+    background-color: white;
+    color: #3322cc;
+    border: #2389ff 1px solid;
+ }
 
 #Cabecacalho{
     background-color: #3322cc;
@@ -120,7 +162,7 @@ hr{
     padding: 20px;
     gap: 10px;
 }
-select{
+ select{
     background-color: #3322cc;
     color: white;
     margin-top: 10px;
@@ -174,7 +216,8 @@ select{
     border-radius: 20px;
     background-color: white;
     color: #3322cc;
-    width: 340px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
  }
@@ -223,9 +266,9 @@ select{
 }
 #Colocarcards {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center; 
-  gap: 80px;
+  gap: 15px;
   padding: 20px;
   height: 780px;
   overflow-y: auto;

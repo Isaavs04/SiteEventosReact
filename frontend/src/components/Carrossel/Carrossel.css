@@ -16,7 +16,7 @@
 }
 
 .carrossel img {
-    animation: aparecer 0.8s ease;
+    animation: aparecer 0.3s ease;
 }
 
 @keyframes aparecer {

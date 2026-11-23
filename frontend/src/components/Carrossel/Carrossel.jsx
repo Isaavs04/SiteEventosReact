@@ -8,12 +8,7 @@ import foto4 from "../../assets/imagem-decoracao.jpg";
 
 function Carrossel() {
 
-    const imagens = [
-        foto1,
-        foto2,
-        foto3, 
-        foto4
-    ];
+const imagens = [foto1, foto2, foto3, foto4];
 
  const [slideAtual, setSlideAtual] = useState(0);
 
@@ -25,7 +20,7 @@ function Carrossel() {
                 (atual + 1) % imagens.length
             );
 
-        }, 50000);
+        }, 5000);
 
         return () => clearInterval(intervalo);
 

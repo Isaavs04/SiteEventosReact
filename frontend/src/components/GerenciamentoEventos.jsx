@@ -1,15 +1,18 @@
 import { Card } from './CardEvento';
+import '../styles/App.css';
 
 export function GerirEventos({ listaEventos = [], aoDeletar, aoEditar }) {
     return (
-        <>
+        <main className='pagina-gerenciamento'>
+
+            <title>Gestão de Eventos</title>
             <div id="segundaColuna">
                 <h1 className="tituloGere">Gerenciar Eventos</h1>
                 <div id="Cabecacalho">
                     <label className="labelCabecalho">Cliente</label>
                     <input className="inputPersonalizadoGerenciar" type="text" placeholder="Maria da Silva" />
                     <label className="labelCabecalho">Tipo</label>
-                    <select name="tipoEvento">
+                    <select className="select" name="tipoEvento">
                         <option value="">Selecione uma opção</option>
                         <option value="Casamento">Casamento</option>
                         <option value="Aniversario">Festa de Aniversário</option>
@@ -46,6 +49,6 @@ export function GerirEventos({ listaEventos = [], aoDeletar, aoEditar }) {
                     })}
                 </div>
             </div>
-        </>
+        </main>
     )
 }
