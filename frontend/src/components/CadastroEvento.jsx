@@ -58,7 +58,10 @@ export function CadastrarEvento({ aoSalvar, eventoEditando }) {
                         <h1 id="cdTitulo">Cadastro de Eventos</h1>
                     </div>
                     <div id="formEvento">
-                        <h2>Informações do cliente</h2>
+                        <div class="cabecalho-com-icone">
+                            <img src='/avatar.png' alt="ÍconeCliente" class="icone-titulo" />
+                            <h2>Informações do cliente</h2>
+                        </div>
                         <hr></hr>
                         <br />
                         <label>Nome do cliente</label>
@@ -69,7 +72,10 @@ export function CadastrarEvento({ aoSalvar, eventoEditando }) {
                         <br />
                         <input className="inputPersonalizado" type="tel" placeholder="(00)00000-0000" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
                         <br />
-                        <h2>Informações do evento</h2>
+                        <div class="cabecalho-com-icone">
+                            <img src='/calendario.png' alt="ÍconeCliente" class="icone-titulo" />
+                            <h2>Informações do evento</h2>
+                        </div>
                         <hr></hr>
                         <br />
                         <label>Endereço</label>

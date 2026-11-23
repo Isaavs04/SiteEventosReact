@@ -1,5 +1,5 @@
 export function Card({ dadosEvento, onDeletar, onEditar }) {
-    return(
+    return (
         <div className="card">
             <div className="cardCabecalho">
                 <span className="tipoE">{dadosEvento.tipo}</span>

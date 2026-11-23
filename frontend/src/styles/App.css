@@ -1,32 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=logout");
 
-body{
-    background-color: white;
-    font-family: 'Inter', sans-serif;
+@media (max-width: 1024px) {
+    .container-principal {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+    #Cadastro {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 20px auto !important;
+    }
+    .inputPersonalizado {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .container-principal > div:last-child {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+    #Cabecacalho {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    #Cabecacalho input, select, .btnBuscar {
+        width: 100% !important;
+        margin-left: 0 !important;
+        box-sizing: border-box !important;
+    }
+    #Colocarcards {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+        max-height: none !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .tituloGere {
+      width: 300px !important;
+}
+}
+
+body {
+  background-image: url('/fundo2.jpg');
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: 'Inter', sans-serif;
 }
 
 input[type="radio"] {
-  display: none; 
+  display: none;
 }
 
 .radio-label {
   display: inline-block;
   padding: 8px 16px;
-  border: 2px solid #3322cc;
+  border: 2px solid #201996;
   border-radius: 8px;
-  color: #3322cc;
+  color: #201996;
   cursor: pointer;
   transition: 0.3s;
 }
 
-input[type="radio"]:checked + .radio-label {
-  background-color: #3322cc;
+input[type="radio"]:checked+.radio-label {
+  background-color: #201996;
   color: white;
 }
 
 .grupo-radio {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -52,12 +103,12 @@ input[type="radio"]:checked + .radio-label {
   align-items: center;
 }
 
-#cabecalhoGerirEvento{
-    background-color: #3322cc;
-    color: white;
-    padding: 25px;
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
+#cabecalhoGerirEvento {
+  background-color: #201996;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
 }
 
 #Cadastro {
@@ -68,213 +119,258 @@ input[type="radio"]:checked + .radio-label {
   box-sizing: border-box;
 }
 
-#cdTitulo{
-    font-size: larger;
+#cdTitulo {
+  font-size: larger;
 }
 
-div#formEvento{
-    color: #3322cc;
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
-    padding: 30px;
-    border: #3322cc 2px solid;
+div#formEvento {
+  color: #201996;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  padding: 30px;
+  border: #201996 2px solid;
 }
 
- h2{
-    margin-bottom: 0px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: medium;
+h2 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: medium;
 }
 
-input[type="number"], input[type="date"], input[type="time"]{
-    margin-top: 10px;
-    height: 25px;
-    margin-bottom: 15px;
-    border: #3322cc 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btnCadastro{
-    color: white;
-    background-color: #3322cc;
-    padding: 15px;
-    border: #3322cc 1px solid;
-    border-radius: 10px;
-     width: 150px;
-}
-.btnCadastro:hover{
-    color: #3322cc;
-    background-color: white;
-}
-.inputPersonalizado{
-    margin-top: 10px;
-    height: 25px;
-    margin-bottom: 15px;
-    border: #3322cc 2px solid;
-    border-radius: 5px;
-    width: 250px;
-}
-.inputPersonalizadoGerenciar{
-    margin-top: 10px;
-    height: 25px;
-    margin-bottom: 15px;
-    border: #2389ff 2px solid;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
+input[type="number"], input[type="date"], input[type="time"] {
+  margin-top: 10px;
+  height: 35px;
+  margin-bottom: 15px;
+  border: #201996 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-hr{
-    color: #3322cc;
+.btnCadastro {
+  color: white;
+  background-color: #201996;
+  padding: 15px;
+  border: #201996 1px solid;
+  border-radius: 10px;
+  width: 150px;
+  transition: all 0.6s;
 }
 
-button, select{
-    cursor: pointer;
+.btnCadastro:hover {
+  color: #201996;
+  background-color: white;
 }
 
-.area-logout{
+.inputPersonalizado {
+  padding: 10px;
+  margin-top: 10px;
+  height: 30px;
+  margin-bottom: 15px;
+  border: #201996 2px solid;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.inputPersonalizadoGerenciar {
+  margin-top: 10px;
+  height: 25px;
+  margin-bottom: 15px;
+  border: #2389ff 2px solid;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+hr {
+  color: #201996;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+.area-logout {
   display: flex;
   justify-content: flex-end;
   margin-right: 12px;
 }
 
-#btnLogout{
-    display: inline;
-    font-size: larger;
-    background-color: #3322cc;
-    color: white;
-    padding: 10px;
-    border: white 1px solid;
-    border-radius: 10px;
- }
-
- #btnLogout:hover{
-    background-color: white;
-    color: #3322cc;
-    border: #2389ff 1px solid;
- }
-
-#Cabecacalho{
-    background-color: #3322cc;
-    color: white;
-    border-radius: 20px 20px 0px 0px;
-    padding: 20px;
-    gap: 10px;
-}
- select{
-    background-color: #3322cc;
-    color: white;
-    margin-top: 10px;
-    height: 25px;
-    margin-bottom: 15px;
-    border: #2389ff 2px solid;
-    border-radius: 5px;
-    width: 165px;
-    height: 35px;
+#btnLogout {
+  display: inline;
+  font-size: larger;
+  background-color: #201996;
+  color: white;
+  padding: 20px;
+  border: white 1px solid;
+  border-radius: 10px;
+  transition: all 0.6s;
 }
 
- .labelCabecalho{
-    margin-right: 10px;
-    margin-left: 10px;
- }
- 
- .btnBuscar{
-    margin-left: 40px;
-    background-color:#3322cc ;
-    color: white;
-    padding: 15px;
-    border: white 1px solid;
-    border-radius: 10px;
-     width: 150px;
- }
- .btnBuscar:hover{
-    background-color: white;
-    color: #3322cc;
-    border: #2389ff 1px solid;
- }
-
- .tituloGere{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #3322cc;
-    background-color: white;
-    border: #3322cc 1px solid;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    text-align: center;
-    font-size: larger;
-    text-transform: uppercase;
-    padding: 10px;
- }
-
- /*Estilização do card*/
- .card{
-    border: 1px solid #3322cc;
-    border-radius: 20px;
-    background-color: white;
-    color: #3322cc;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
- }
- .cardCabecalho{
-    background-color: #3322cc;
-    border-radius:  20px 20px 0px 0px;
-    color: white;
-    text-transform: uppercase;
-    padding: 20px;
- }
-
- .btnFechar{
-    background-color: #3322cc;
-    color: white;
-    border: white 1px solid;
-    border-radius: 5px;
-    padding: 10px;
-    width: 45px;
-    margin-left: 100px;
-    font-weight: bolder;
- }
- .btnFechar:hover{
-    background-color: white;
-    color: #3322cc;
-    border: #2389ff 1px solid;
-    border-radius: 5px;
- }
- .cardCorpo{
-    padding: 20px;
-    flex-grow: 1;
- }
- .btnEditar{
-    display: block;
-    margin: 0 auto 20px auto;
-    color: white;
-    background-color: #3322cc;
-    padding: 15px;
-    border: #3322cc 1px solid;
-    border-radius: 10px;
-    width: 280px;
-    text-align: center;
+#btnLogout:hover {
+  background-color: white;
+  color: #201996;
+  border: #2389ff 1px solid;
 }
-.btnEditar:hover{
-    color: #3322cc;
-    background-color: white;
+
+#Cabecacalho {
+  background-color: #201996;
+  color: white;
+  border-radius: 0px 20px 0px 0px;
+  padding: 20px;
+  gap: 10px;
 }
+
+#Cabecacalho input {
+  height: 30px;
+}
+
+select {
+  background-color: #201996;
+  color: white;
+  margin-top: 10px;
+  height: 25px;
+  margin-bottom: 15px;
+  border: #2389ff 2px solid;
+  border-radius: 5px;
+  width: 170px;
+  height: 35px;
+  padding: 10px;
+}
+
+.labelCabecalho {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btnBuscar {
+  margin-left: 40px;
+  background-color: #201996;
+  color: white;
+  padding: 15px;
+  border: white 1px solid;
+  border-radius: 10px;
+  width: 150px;
+  transition: all 0.6s;
+}
+
+.btnBuscar:hover {
+  background-color: white;
+  color: #3322cc;
+  border: #2389ff 1px solid;
+  transition: all 0.6s;
+}
+
+.tituloGere {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #201996;
+  background-color: white;
+  border: #201996 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  font-size: larger;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #201996;
+  border-radius: 20px;
+  background-color: white;
+  color: #201996;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+
+.cardCabecalho {
+  background-color: #201996;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnFechar {
+  background-color: #201996;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  padding: 6px 12px;
+  width: auto;
+  margin-left: 0px;
+  font-weight: bolder;
+  transition: all 0.6s;
+}
+
+.btnFechar:hover {
+  background-color: white;
+  color: #201996;
+  border: #2389ff 1px solid;
+  border-radius: 5px;
+}
+
+.cardCorpo {
+  font-size: medium;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.cardCorpo p {
+  margin-bottom: 10px;
+}
+
+.btnEditar {
+  display: block;
+  margin: 0 auto 20px auto;
+  color: white;
+  background-color: #201996;
+  padding: 15px;
+  border: #201996 1px solid;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.btnEditar:hover {
+  color: #201996;
+  background-color: white;
+}
+
 #Colocarcards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  justify-content: center; 
+  justify-content: center;
   gap: 15px;
   padding: 20px;
   height: 780px;
   overflow-y: auto;
   align-content: start;
   background-color: white;
-  border: 2px solid #3322cc;
+  border: 2px solid #201996;
   border-radius: 0px 0px 20px 20px;
   margin-top: 0px;
+}
+
+.cabecalho-com-icone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.icone-titulo {
+  width: 35px;
+  height: auto;
 }
