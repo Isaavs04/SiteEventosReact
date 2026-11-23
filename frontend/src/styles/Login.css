@@ -1,30 +1,79 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-.pagina-login{
-    font-family: 'Inter', sans-serif;
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 92vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+    .form {
+        margin-top: 0px !important;
+        width: 700px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .form form {
+        margin-top: 120px;
+        margin-bottom: 130px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .form form .campo {
+        width: 100% !important; 
+        align-items: stretch;
+    }
+    .form form .campo input {
+        width: 200px !important;
+        box-sizing: border-box;
+    }
+    .form form button {
+        width: 200px !important;
+        padding: 14px !important;
+        margin: 15px auto !important;
+        display: block;
+    }
+}
 .pagina-login{
-    height: 96vh;
-    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/fundo2.jpg'); 
+    background-size: 500px;
+    background-repeat: repeat;
+    background-position: top left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .container{
     display: flex;
-    background-color: #d5d6da;
+    background-color: #f2f2f2;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.137);
-    width: 90vw; height: 90vh;
+    box-shadow: 8px 8px 20px 8px rgba(0, 0, 0, 0.36);
+    width: 90vw; 
+    height: 90vh;
+    padding: 0px;
+    overflow: hidden; 
 }
-
+.carrossel {
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 0px 20px 20px 0px;
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -41,11 +90,13 @@
         max-width: 500px;
 
         h1{
+            color: #201996;
             font-size: 6.4vh;
             margin-bottom: 20px;
         }
 
          .campo{
+            color: #201996;
             display: flex;
             flex-direction: column;
             margin: 12px;
@@ -55,9 +106,9 @@
                 padding: 8px;
                 margin-top: 8px;
                 background-color: #F5F7FB;
-                border: none;
+                border: 1px solid #201996;
                 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.13);
-                border-radius: 6px;
+                border-radius: 4px;
             }
 
             input:focus{
@@ -83,6 +134,3 @@
          }
     }
 }
-
-
-
