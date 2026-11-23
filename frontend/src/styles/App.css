@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=logout");
+
+body{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="radio"] {
+  display: none; 
+}
+
+.radio-label {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #3322cc;
+  border-radius: 8px;
+  color: #3322cc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="radio"]:checked + .radio-label {
+  background-color: #3322cc;
+  color: white;
+}
+
+.grupo-radio {
+  display: flex;
+  gap: 15px; 
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.container-principal {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(0, 3fr);
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#Colocarcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#formEvento {
+  gap: 10px;
+  align-items: center;
+}
+
+#cabecalhoGerirEvento{
+    background-color: #3322cc;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#Cadastro {
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+  height: auto;
+  box-sizing: border-box;
+}
+
+#cdTitulo{
+    font-size: larger;
+}
+
+div#formEvento{
+    color: #3322cc;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 30px;
+    border: #3322cc 2px solid;
+}
+
+ h2{
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+input[type="number"], input[type="date"], input[type="time"]{
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #3322cc 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnCadastro{
+    color: white;
+    background-color: #3322cc;
+    padding: 15px;
+    border: #3322cc 1px solid;
+    border-radius: 10px;
+     width: 150px;
+}
+.btnCadastro:hover{
+    color: #3322cc;
+    background-color: white;
+}
+.inputPersonalizado{
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #3322cc 2px solid;
+    border-radius: 5px;
+    width: 250px;
+}
+.inputPersonalizadoGerenciar{
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #2389ff 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+hr{
+    color: #3322cc;
+}
+
+button, select{
+    cursor: pointer;
+}
+
+.area-logout{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+}
+
+#btnLogout{
+    display: inline;
+    font-size: larger;
+    background-color: #3322cc;
+    color: white;
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+ }
+
+ #btnLogout:hover{
+    background-color: white;
+    color: #3322cc;
+    border: #2389ff 1px solid;
+ }
+
+#Cabecacalho{
+    background-color: #3322cc;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    gap: 10px;
+}
+ select{
+    background-color: #3322cc;
+    color: white;
+    margin-top: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: #2389ff 2px solid;
+    border-radius: 5px;
+    width: 165px;
+    height: 35px;
+}
+
+ .labelCabecalho{
+    margin-right: 10px;
+    margin-left: 10px;
+ }
+ 
+ .btnBuscar{
+    margin-left: 40px;
+    background-color:#3322cc ;
+    color: white;
+    padding: 15px;
+    border: white 1px solid;
+    border-radius: 10px;
+     width: 150px;
+ }
+ .btnBuscar:hover{
+    background-color: white;
+    color: #3322cc;
+    border: #2389ff 1px solid;
+ }
+
+ .tituloGere{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #3322cc;
+    background-color: white;
+    border: #3322cc 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 10px;
+ }
+
+ /*Estilização do card*/
+ .card{
+    border: 1px solid #3322cc;
+    border-radius: 20px;
+    background-color: white;
+    color: #3322cc;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+ }
+ .cardCabecalho{
+    background-color: #3322cc;
+    border-radius:  20px 20px 0px 0px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+ }
+
+ .btnFechar{
+    background-color: #3322cc;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 45px;
+    margin-left: 100px;
+    font-weight: bolder;
+ }
+ .btnFechar:hover{
+    background-color: white;
+    color: #3322cc;
+    border: #2389ff 1px solid;
+    border-radius: 5px;
+ }
+ .cardCorpo{
+    padding: 20px;
+    flex-grow: 1;
+ }
+ .btnEditar{
+    display: block;
+    margin: 0 auto 20px auto;
+    color: white;
+    background-color: #3322cc;
+    padding: 15px;
+    border: #3322cc 1px solid;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+}
+.btnEditar:hover{
+    color: #3322cc;
+    background-color: white;
+}
+#Colocarcards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center; 
+  gap: 15px;
+  padding: 20px;
+  height: 780px;
+  overflow-y: auto;
+  align-content: start;
+  background-color: white;
+  border: 2px solid #3322cc;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 0px;
+}
